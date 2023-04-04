@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <link rel="apple-touch-icon" sizes="160x160" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="preload" href="fonts/IQOS-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/IQOS-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/IQOS-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/IQOS-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet preload prefetch" type="text/css" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <title>Title</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="title" content="">
+  <meta property="og:description" content="">
+  <meta property="description" content="">
+  <meta property="og:image" content="">
+  <meta name="keywords" content="">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <svg class="header__ico">
+          <use xlink:href="images/svg/sprite.svg#iqos-header"></use>
+        </svg>
+      </div>
+    </header>
+    <main></main>
+    <footer class="footer"></footer>
+  </div>
+  <!-- Popups -->
+  <div class="modal micromodal-slide" id="modal-age" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__inner">
+          <p class="modal__headertext">
+            Пожалуйста, укажите дату <span class="nowrap">Вашего рождения</span>
+          </p>
+          <div class="modal__input-wrapper">
+            <input type="text" id="day" class="modal__input" size="2" minlength="1" maxlength="2" aria-label="day"
+              placeholder="ДД">
+            <span class="modal__slash">/</span>
+            <input type="text" id="month" class="modal__input" size="2" minlength="1" maxlength="2" aria-label="month"
+              placeholder="ММ">
+            <span class="modal__slash">/</span>
+            <input type="text" id="year" class="modal__input" size="4" maxlength="4" minlength="4" aria-label="year"
+              placeholder="ГГГГ">
+          </div>
+          <p class="modal__text">
+            Я&nbsp;подтверждаю, что мне исполнилось 18&nbsp;или более лет, я&nbsp;являюсь потребителем табака и/или
+            иной
+            никотинсодержащей продукции и&nbsp;гражданином&nbsp;РФ.
+          </p>
+          <button class="button bg-black white modal__button-accept" id="button-accept">
+            Подтвердить
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal micromodal-slide" id="modal-adult" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1">
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <svg class="modal__ico" viewBox="0 0 112 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M111.787 15.9626C111.787 13.2185 110.921 11.4785 109.037 10.483C107.152 9.48755 104.547 9.42695 101.961 9.42695H91.4519C87.6061 9.42695 86.4043 8.70846 86.4043 6.45777V6.3712C86.4043 3.63574 87.933 3.2462 93.5767 3.2462H102.547C104.633 3.29814 105.518 3.3241 106.874 4.53602L107.566 5.1766C107.876 5.50233 108.329 5.68976 108.806 5.68976C109.283 5.68976 109.736 5.50233 110.046 5.1766C110.609 4.75303 110.776 4.03703 110.45 3.4453C110.45 3.4453 110.45 3.4453 110.45 3.40201C109.287 1.27251 106.604 0.103878 102.624 0H94.3362C89.7597 0 86.6446 0.502078 84.9429 1.50623C83.5007 2.3286 82.8757 3.48858 82.8757 5.36704V6.83C82.8757 8.95084 83.3949 10.3705 84.5583 11.2794C85.7216 12.1884 87.6061 12.6558 90.327 12.6558H102.614C107.422 12.6558 108.248 13.5215 108.258 15.6856C108.258 18.7241 106.806 19.0097 100.153 19.0097C99.2781 19.0097 91.5576 19.0097 91.3557 19.0097C89.1059 18.9578 88.1637 18.9318 86.7408 17.668L86.0197 17.0187C85.6997 16.6976 85.2487 16.507 84.7698 16.4907C84.3029 16.5085 83.8618 16.6885 83.5391 16.9928C82.9856 17.4219 82.8236 18.1334 83.1449 18.7241C84.3468 20.9055 87.1446 22.0914 91.25 22.1867H101.028C103.23 22.1867 105.951 22.1867 108.104 21.3989C110.585 20.4813 111.787 18.7327 111.787 15.9973V15.9453V15.9626Z"
+            fill="black" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M58.8707 22.1867C56.1579 22.1867 52.7179 22.0229 50.1543 20.6955C47.5347 19.3422 46.2576 16.946 46.2576 13.4982V8.68848C46.2576 5.19758 47.6093 2.80997 50.1543 1.49118C52.6993 0.172391 56.1579 0 58.8707 0H64.464C67.1862 0 70.5515 0.129293 73.1897 1.49118C75.8279 2.85306 77.0958 5.24067 77.0958 8.68848V13.4982C77.0958 16.9805 75.7534 19.3681 73.1897 20.6955C70.6261 22.0229 67.1862 22.1867 64.464 22.1867H58.8707ZM51.9712 4.4477C50.461 5.43895 49.7245 7.11114 49.7245 9.55908H49.7152V12.6793C49.7152 15.1445 50.4516 16.8167 51.9525 17.7993C53.211 18.6268 54.973 18.9888 57.6764 18.9888H65.675C68.3691 18.9888 70.1404 18.6096 71.3802 17.7993C72.8904 16.7995 73.6269 15.1273 73.6269 12.6793V9.55908C73.6269 7.10252 72.8904 5.43033 71.3802 4.4477C70.1404 3.61161 68.3784 3.24959 65.675 3.24959H57.6951C54.9823 3.24959 53.211 3.62885 51.9712 4.4477Z"
+            fill="black" />
+          <path
+            d="M1.87586 22.1867C0.821942 22.1586 -0.0116299 21.4317 0.00012276 20.5509V1.60998C0.000122702 1.03479 0.367458 0.50329 0.963758 0.215696C1.56006 -0.0718986 2.29473 -0.0718986 2.89103 0.215696C3.48733 0.50329 3.85467 1.03479 3.85467 1.60998V20.5509C3.86016 20.9816 3.65986 21.3964 3.29813 21.7035C2.9364 22.0105 2.44307 22.1844 1.92739 22.1867"
+            fill="black" />
+          <path
+            d="M43.967 22.9662L39.6466 19.0728C39.231 18.6867 38.6453 18.484 38.0464 18.519H21.2352C18.4961 18.519 16.7265 18.1665 15.4558 17.3526C13.9309 16.396 13.1873 14.7682 13.1873 12.3767V3.54101C13.1848 3.45277 13.2223 3.36736 13.2914 3.30416C13.3606 3.24097 13.4554 3.20534 13.5544 3.20537H29.2643C31.994 3.20537 33.773 3.56618 35.0249 4.37172C36.5498 5.32829 37.2934 6.95615 37.2934 9.34759V13.627C37.2909 13.9786 37.4452 14.3167 37.7223 14.5669C37.9994 14.8171 38.3767 14.959 38.7712 14.9612H39.3454C39.7398 14.959 40.1171 14.8171 40.3942 14.5669C40.6714 14.3167 40.8257 13.9786 40.8232 13.627V8.49171C40.8232 5.1353 39.5336 2.8026 36.8698 1.48521C34.206 0.16782 30.808 0 28.0595 0H11.1165C10.7221 0.00221841 10.3448 0.14403 10.0676 0.394238C9.79049 0.644445 9.6362 0.98255 9.6387 1.33417V13.1739C9.6387 16.5303 10.9282 18.8546 13.5732 20.1804C16.2182 21.5062 19.635 21.632 22.3742 21.632H36.8416C37.2335 21.6321 37.6093 21.7709 37.8864 22.018L41.4162 25.215C41.6917 25.4615 42.0659 25.6 42.4563 25.6C42.8466 25.6 43.2209 25.4615 43.4964 25.215L43.9011 24.8458C44.4751 24.3237 44.4751 23.4883 43.9011 22.9662"
+            fill="black" />
+        </svg>
+        <p class="modal__text">
+          Извините, доступ на веб-сайт разрешен только гражданам РФ старше 18 лет
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>
